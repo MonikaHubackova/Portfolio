@@ -10,21 +10,23 @@
 
   <body>
     <header class="topbar">
-      <nav class="nav">
-        <ul class="menu">
-          <li class="menu__home">
-            <a href="#hero" aria-label="Domů">
-              <img src="home.svg" alt="Domů" />
-            </a>
-          </li>
+      <div class="container">
+        <nav class="nav">
+          <ul class="menu">
+            <li class="menu__home">
+              <a href="#hero" aria-label="Domů">
+                <img src="home.svg" alt="Domů" />
+              </a>
+            </li>
 
-          <li class="menu__spacer"></li>
+            <li class="menu__spacer"></li>
 
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#omne">O mně</a></li>
-          <li><a href="#kontakt">Kontakt</a></li>
-        </ul>
-      </nav>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#omne">O mně</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <div class="hero" id="hero">
@@ -47,9 +49,9 @@
             <span class="group">Vizuální identita</span> UX/UI
             <span class="group">A další...</span>
           </h3>
-          <a href="#kontakt" class="btn btn--primary btn--float"
-            >Chci grafiku
-          </a>
+          <div class="button_area">
+            <a href="#kontakt" class="btn btn--primary">Chci grafiku </a>
+          </div>
         </div>
       </div>
     </div>
@@ -59,89 +61,88 @@
         Portfolio
       </span>
     </h1>
+
     <section class="portfolio" id="portfolio">
-      <div class="portfolio__grid">
-        <a href="#img-1" class="work">
-          <img src="debnar.jpg" alt="Debnar – vizuální identita" />
+      <h2 class="section_bg_title">Těší mě!</h2>
 
-          <span class="work__overlay">
-            <span class="work__content">
-              <h3 class="work__title">Debnar</h3>
-              <p class="work__desc">
-                Kompletní vizuální identita, tiskoviny a podklady pro sociální
-                sítě.
-              </p>
-            </span>
-          </span>
-        </a>
+      <div class="container">
+        <div class="portfolio__grid">
+          <a href="#img-1" class="work">
+            <img src="debnar.jpg" alt="Debnar – vizuální identita" />
 
-        <a href="#img-2" class="work">
-          <img src="trinom.jpg" alt="Trinom" />
-          <span class="work__overlay">
-            <span class="work__content">
-              <h3 class="work__title">Debnar</h3>
-              <p class="work__desc">
-                Kompletní vizuální identita, tiskoviny a podklady pro sociální
-                sítě.
-              </p>
+            <span class="work__overlay">
+              <span class="work__content">
+                <h3 class="work__title">
+                  Peter Debnár: Strategie jako stav mysli
+                </h3>
+                <p class="work__desc">
+                  Design obálky knihy, sazba textu, překreslování technických
+                  ilustrací.
+                </p>
+              </span>
             </span>
-          </span>
-        </a>
+          </a>
 
-        <a href="#img-3" class="work">
-          <img src="schuberth.jpg" alt="Schuberth" />
-          <span class="work__overlay">
-            <span class="work__content">
-              <h3 class="work__title">Debnar</h3>
-              <p class="work__desc">
-                Kompletní vizuální identita, tiskoviny a podklady pro sociální
-                sítě.
-              </p>
+          <a href="#img-2" class="work">
+            <img src="trinom.jpg" alt="Trinom" />
+            <span class="work__overlay">
+              <span class="work__content">
+                <h3 class="work__title">Trinom: Případová studie</h3>
+                <p class="work__desc">Design a&nbsp;sazba případové studie.</p>
+              </span>
             </span>
-          </span>
-        </a>
+          </a>
 
-        <a href="#img-4" class="work">
-          <img src="ramisol.jpg" alt="Ramisol" />
-          <span class="work__overlay">
-            <span class="work__content">
-              <h3 class="work__title">Debnar</h3>
-              <p class="work__desc">
-                Kompletní vizuální identita, tiskoviny a podklady pro sociální
-                sítě.
-              </p>
+          <a href="#img-3" class="work">
+            <img src="schuberth.jpg" alt="Schuberth" />
+            <span class="work__overlay">
+              <span class="work__content">
+                <h3 class="work__title">Schuberth: Výprodej</h3>
+                <p class="work__desc">
+                  Design slevového letáku na prodej vybavení na motorku.
+                </p>
+              </span>
             </span>
-          </span>
-        </a>
+          </a>
 
-        <a href="#img-5" class="work">
-          <img src="sit21.jpg" alt="SIT 21" />
-          <span class="work__overlay">
-            <span class="work__content">
-              <h3 class="work__title">Debnar</h3>
-              <p class="work__desc">
-                Kompletní vizuální identita, tiskoviny a podklady pro sociální
-                sítě.
-              </p>
+          <a href="#img-4" class="work">
+            <img src="ramisol.jpg" alt="Ramisol" />
+            <span class="work__overlay">
+              <span class="work__content">
+                <h3 class="work__title">Trinom: Sociální sítě</h3>
+                <p class="work__desc">
+                  Tvorba příspěvků na Instagram a&nbsp;Facebook.
+                </p>
+              </span>
             </span>
-          </span>
-        </a>
+          </a>
 
-        <a href="#img-6" class="work">
-          <img src="debnar2.jpg" alt="Debnar 2" />
-          <span class="work__overlay">
-            <span class="work__content">
-              <h3 class="work__title">Debnar</h3>
-              <p class="work__desc">
-                Kompletní vizuální identita, tiskoviny a podklady pro sociální
-                sítě.
-              </p>
+          <a href="#img-5" class="work">
+            <img src="sit21.jpg" alt="SIT 21" />
+            <span class="work__overlay">
+              <span class="work__content">
+                <h3 class="work__title">Síť21: Trolejbus</h3>
+                <p class="work__desc">Design polepu na zlínské trolejbusy.</p>
+              </span>
             </span>
-          </span>
-        </a>
-      </div>
-      <div class="button_area">
-        <button type="submit" class="btn btn--primary">Zobrazit více</button>
+          </a>
+
+          <a href="#img-6" class="work">
+            <img src="debnar2.jpg" alt="Debnar 2" />
+            <span class="work__overlay">
+              <span class="work__content">
+                <h3 class="work__title">Peter Debnár: OnePager</h3>
+                <p class="work__desc">
+                  Převedení článku do grafické podoby, zjednodušení, tvorba
+                  grafů a&nbsp;ilustrací.
+                </p>
+              </span>
+            </span>
+          </a>
+        </div>
+        <div class="button_area">
+          <button type="submit" class="btn btn--primary">Zobrazit více</button>
+        </div>
       </div>
     </section>
 
@@ -156,43 +157,45 @@
       <img src="trinom.jpg" alt="" />
     </div>
 
-    <div id="img-2" class="lightbox">
+    <div id="img-3" class="lightbox">
       <a href="#portfolio" class="lightbox__close"></a>
-      <img src="img/portfolio-2.jpg" alt="" />
+      <img src="schuberth.jpg" alt="" />
     </div>
-    <div id="img-2" class="lightbox">
+    <div id="img-4" class="lightbox">
       <a href="#portfolio" class="lightbox__close"></a>
-      <img src="img/portfolio-2.jpg" alt="" />
+      <img src="ramisol.jpg" alt="" />
     </div>
-    <div id="img-2" class="lightbox">
+    <div id="img-5" class="lightbox">
       <a href="#portfolio" class="lightbox__close"></a>
-      <img src="img/portfolio-2.jpg" alt="" />
+      <img src="sit21.jpg" alt="" />
     </div>
-    <div id="img-2" class="lightbox">
+    <div id="img-6" class="lightbox">
       <a href="#portfolio" class="lightbox__close"></a>
-      <img src="img/portfolio-2.jpg" alt="" />
+      <img src="debnar2.jpg" alt="" />
     </div>
 
     <section class="about" id="omne">
-      <div class="about__inner">
-        <div class="about__grid">
-          <!-- Text -->
-          <div class="about__text">
-            <h2 class="about__title">Těší mě!</h2>
-            <p class="about__p">
-              Jmenuji se Monika a ke grafice jsem se dostala už ve dvanácti
-              letech – tehdy hlavně díky blogům, které jsem si sama tvořila a
-              graficky ladila. Postupně se z koníčku stala vášeň a dnes i práce.
-              Nejčastěji dělám tiskoviny, ale občas i fotím nebo ilustruji.
-              Každý projekt beru individuálně a snažím se, aby design nebyl jen
-              hezký, ale hlavně funkční.
-            </p>
-          </div>
+      <h2 class="section_bg_title">Těší mě!</h2>
 
-          <!-- Fotky přes sebe -->
-          <div class="about__media" aria-label="foto-bg">
-            <img class="about__shape" src="foto-bg.png" alt="foto-bg" />
-            <img class="about__photo" src="foto.png" alt="foto" />
+      <div class="about__inner">
+        <div class="container">
+          <div class="about__grid">
+            <div class="about__text">
+              <p class="about__p">
+                Jmenuji se Monika a ke grafice jsem se dostala už ve dvanácti
+                letech – tehdy hlavně díky blogům, které jsem si sama tvořila a
+                graficky ladila. Postupně se z koníčku stala vášeň a dnes i
+                práce. Nejčastěji dělám tiskoviny, ale občas i fotím nebo
+                ilustruji. Každý projekt beru individuálně a snažím se, aby
+                design nebyl jen hezký, ale hlavně funkční.
+              </p>
+            </div>
+
+            <!-- Fotky přes sebe -->
+            <div class="about__media" aria-label="foto-bg">
+              <img class="about__shape" src="foto-bg.png" alt="foto-bg" />
+              <img class="about__photo" src="foto.png" alt="foto" />
+            </div>
           </div>
         </div>
       </div>
