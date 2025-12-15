@@ -3,44 +3,320 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <title>Monika Hubáčková | Portfolio</title>
+    <link rel="icon" type="image/svg" href="favicon.svg" />
   </head>
+
   <body>
-    <h1>Toto je hodně velký nadpis</h1>
-    <h2>Trochu menší nadpis</h2>
-    <h3>Odstavec 1</h3>
-    <p>
-      <strong>Tady se zatím nenachází nic převratného</strong>, ale to jen
-      proto, že budoucí autor teprve sbírá odvahu napsat něco skutečně
-      velkolepého. <br />
-      Tento prostor slouží jako tréninková zóna pro všechny nápady, které sem
-      jednou dorazí v dokonalé formě, naleštěné,
-      <span> upravené a s patřičným dramatickým nádechem.</span>
-      Prozatím tu stojí jen tato skromná výplň, která se snaží tvářit důležitě,
-      i když moc dobře ví, že její dny — či možná jen hodiny — jsou sečteny.
-    </p>
-    <h3>Hodně dlouhý název odstavce</h3>
-    <p>
-      <em
-        >Zatímco budoucí obsah někde v dálce dozrává, tento text tu poslušně
-        drží místo, aby stránka nepůsobila prázdně jako lednička po návštěvě
-        hladového studenta. Pečlivě se roztahuje přes několik vět, aby vytvořil
-        iluzi, že už tu vlastně všechno hotové je, a že se nejedná o pouhou
-        provizorní
-        <span> záplatu, ale o sofistikovanou výplň — téměř umělecké dílo,</span>
-        které by jeden možná i ocenil, kdyby si ho přečetl opravdu pozorně.</em
-      >
-    </p>
-    <h3>Odstavec 3</h3>
-    <p style="color: red">
-      Samozřejmě, tento text dobře ví,
-      <span> že ho v budoucnu čeká nemilosrdný osud.</span>
-      Bude nahrazen, vyškrtnut nebo bez milosti smazán jediným stiskem klávesy.
-      Ale ani to ho neodrazuje od toho, aby tu zatím dělal svoji práci na sto
-      procent. S grácií a elegancí se rozlévá po stránce, povídá si sám se
-      sebou, snaží se znít moudře a občas i trošku vtipně, aby aspoň na chvilku
-      zabavil čtenáře, který sem zabloudil víceméně náhodou.
-    </p>
+    <header class="topbar">
+      <nav class="nav">
+        <ul class="menu">
+          <li class="menu__home">
+            <a href="#hero" aria-label="Domů">
+              <img src="home.svg" alt="Domů" />
+            </a>
+          </li>
+
+          <li class="menu__spacer"></li>
+
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#omne">O mně</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="hero" id="hero">
+      <video autoplay muted loop id="gradient">
+        <source src="gradient.mp4" type="video/mp4" />
+      </video>
+      <img src="favicon-white.svg" alt="logo" class="hero-logo" />
+      <div class="content">
+        <div class="headline">
+          <h1>
+            <span style="font-weight: 300; font-size: 2em"
+              >Jsem Monika.&nbsp;&nbsp;&nbsp;|&nbsp;
+            </span>
+            <span style="font-weight: 600; font-size: 2em"
+              >&nbsp;Jsem grafik.
+            </span>
+          </h1>
+          <h3>
+            Tiskoviny <span class="group">Sociální sítě</span> Ilustrace
+            <span class="group">Vizuální identita</span> UX/UI
+            <span class="group">A další...</span>
+          </h3>
+          <a href="#kontakt" class="btn btn--primary btn--float"
+            >Chci grafiku
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <h1>
+      <span style="font-weight: 600; font-size: 2em" color="red">
+        Portfolio
+      </span>
+    </h1>
+    <section class="portfolio" id="portfolio">
+      <div class="portfolio__grid">
+        <a href="#img-1" class="work">
+          <img src="debnar.jpg" alt="Debnar – vizuální identita" />
+
+          <span class="work__overlay">
+            <span class="work__content">
+              <h3 class="work__title">Debnar</h3>
+              <p class="work__desc">
+                Kompletní vizuální identita, tiskoviny a podklady pro sociální
+                sítě.
+              </p>
+            </span>
+          </span>
+        </a>
+
+        <a href="#img-2" class="work">
+          <img src="trinom.jpg" alt="Trinom" />
+          <span class="work__overlay">
+            <span class="work__content">
+              <h3 class="work__title">Debnar</h3>
+              <p class="work__desc">
+                Kompletní vizuální identita, tiskoviny a podklady pro sociální
+                sítě.
+              </p>
+            </span>
+          </span>
+        </a>
+
+        <a href="#img-3" class="work">
+          <img src="schuberth.jpg" alt="Schuberth" />
+          <span class="work__overlay">
+            <span class="work__content">
+              <h3 class="work__title">Debnar</h3>
+              <p class="work__desc">
+                Kompletní vizuální identita, tiskoviny a podklady pro sociální
+                sítě.
+              </p>
+            </span>
+          </span>
+        </a>
+
+        <a href="#img-4" class="work">
+          <img src="ramisol.jpg" alt="Ramisol" />
+          <span class="work__overlay">
+            <span class="work__content">
+              <h3 class="work__title">Debnar</h3>
+              <p class="work__desc">
+                Kompletní vizuální identita, tiskoviny a podklady pro sociální
+                sítě.
+              </p>
+            </span>
+          </span>
+        </a>
+
+        <a href="#img-5" class="work">
+          <img src="sit21.jpg" alt="SIT 21" />
+          <span class="work__overlay">
+            <span class="work__content">
+              <h3 class="work__title">Debnar</h3>
+              <p class="work__desc">
+                Kompletní vizuální identita, tiskoviny a podklady pro sociální
+                sítě.
+              </p>
+            </span>
+          </span>
+        </a>
+
+        <a href="#img-6" class="work">
+          <img src="debnar2.jpg" alt="Debnar 2" />
+          <span class="work__overlay">
+            <span class="work__content">
+              <h3 class="work__title">Debnar</h3>
+              <p class="work__desc">
+                Kompletní vizuální identita, tiskoviny a podklady pro sociální
+                sítě.
+              </p>
+            </span>
+          </span>
+        </a>
+      </div>
+      <div class="button_area">
+        <button type="submit" class="btn btn--primary">Zobrazit více</button>
+      </div>
+    </section>
+
+    <!-- LIGHTBOXY -->
+    <div id="img-1" class="lightbox">
+      <a href="#portfolio" class="lightbox__close"></a>
+      <img src="debnar.jpg" alt="" />
+    </div>
+
+    <div id="img-2" class="lightbox">
+      <a href="#portfolio" class="lightbox__close"></a>
+      <img src="trinom.jpg" alt="" />
+    </div>
+
+    <div id="img-2" class="lightbox">
+      <a href="#portfolio" class="lightbox__close"></a>
+      <img src="img/portfolio-2.jpg" alt="" />
+    </div>
+    <div id="img-2" class="lightbox">
+      <a href="#portfolio" class="lightbox__close"></a>
+      <img src="img/portfolio-2.jpg" alt="" />
+    </div>
+    <div id="img-2" class="lightbox">
+      <a href="#portfolio" class="lightbox__close"></a>
+      <img src="img/portfolio-2.jpg" alt="" />
+    </div>
+    <div id="img-2" class="lightbox">
+      <a href="#portfolio" class="lightbox__close"></a>
+      <img src="img/portfolio-2.jpg" alt="" />
+    </div>
+
+    <section class="about" id="omne">
+      <div class="about__inner">
+        <div class="about__grid">
+          <!-- Text -->
+          <div class="about__text">
+            <h2 class="about__title">Těší mě!</h2>
+            <p class="about__p">
+              Jmenuji se Monika a ke grafice jsem se dostala už ve dvanácti
+              letech – tehdy hlavně díky blogům, které jsem si sama tvořila a
+              graficky ladila. Postupně se z koníčku stala vášeň a dnes i práce.
+              Nejčastěji dělám tiskoviny, ale občas i fotím nebo ilustruji.
+              Každý projekt beru individuálně a snažím se, aby design nebyl jen
+              hezký, ale hlavně funkční.
+            </p>
+          </div>
+
+          <!-- Fotky přes sebe -->
+          <div class="about__media" aria-label="foto-bg">
+            <img class="about__shape" src="foto-bg.png" alt="foto-bg" />
+            <img class="about__photo" src="foto.png" alt="foto" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Statistiky -->
+      <div class="about-stats" aria-label="Statistiky">
+        <div class="about-stats__inner">
+          <div class="stat">
+            <div class="stat__num">8+</div>
+            <div class="stat__label">let praxe</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">50+</div>
+            <div class="stat__label">projektů</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">30+</div>
+            <div class="stat__label">tiskovin</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">10+</div>
+            <div class="stat__label">identit</div>
+          </div>
+          <div class="stat">
+            <div class="stat__num">100%</div>
+            <div class="stat__label">nadšení</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="kontakt">
+      <h2 class="contact__title">Kontakt</h2>
+
+      <form class="contact__form">
+        <div class="contact__row">
+          <input type="text" placeholder="Vaše jméno" required />
+          <input type="email" placeholder="Váš e-mail" required />
+        </div>
+
+        <div class="contact__row">
+          <input type="text" placeholder="Předmět" />
+          <input type="email" placeholder="Váš telefon" />
+        </div>
+
+        <textarea placeholder="Vaše zpráva" required></textarea>
+
+        <button type="submit" class="btn btn--primary">Odeslat</button>
+      </form>
+    </section>
+
+    <div class="logos">
+      <!--CAROUSEL S LOGAMA - HOTOVO-->
+      <div class="logo_items">
+        <div class="carousel_icon">
+          <a href="https://www.umutexpres.cz" target="_blank" rel="noopener"
+            ><img src="logo_1.png"
+          /></a>
+        </div>
+
+        <div class="carousel_icon">
+          <a href="https://www.manamarketing.cz" target="_blank" rel="noopener"
+            ><img src="logo_2.png"
+          /></a>
+        </div>
+        <div class="carousel_icon">
+          <a href="https://www.borntoswim.cz" target="_blank" rel="noopener"
+            ><img src="logo_3.png"
+          /></a>
+        </div>
+        <div class="carousel_icon">
+          <a href="https://PeterDebnar.cz" target="_blank" rel="noopener"
+            ><img src="logo_4.png"
+          /></a>
+        </div>
+        <div class="carousel_icon">
+          <a href="https://www.tempus-pm.com" target="_blank" rel="noopener"
+            ><img src="logo_5.png"
+          /></a>
+        </div>
+        <div class="carousel_icon">
+          <a href="https://www.trinomprerov.cz" target="_blank" rel="noopener"
+            ><img src="logo_6.png"
+          /></a>
+        </div>
+        <div class="carousel_icon">
+          <a href="https://www.tcservis.cz/" target="_blank" rel="noopener"
+            ><img src="logo_7.png"
+          /></a>
+        </div>
+        <div class="carousel_icon">
+          <a href="https://sit21.cz/" target="_blank" rel="noopener"
+            ><img src="logo_8.png"
+          /></a>
+        </div>
+        <div class="carousel_icon">
+          <a href="https://www.solartechnik.cz/" target="_blank" rel="noopener"
+            ><img src="logo_9.png"
+          /></a>
+        </div>
+        <div class="carousel_icon">
+          <a
+            href="https://www.simonesantoroenologo.it/en/"
+            target="_blank"
+            rel="noopener"
+            ><img src="logo_10.png"
+          /></a>
+        </div>
+        <div class="carousel_icon">
+          <a href="https://geneze.cz" target="_blank" rel="noopener"
+            ><img src="logo_11.png"
+          /></a>
+        </div>
+        <div class="carousel_icon">
+          <a href="https://greiner.com" target="_blank" rel="noopener"
+            ><img src="logo_12.png"
+          /></a>
+        </div>
+        <div class="carousel_icon">
+          <a href="https://zlinnet.cz" target="_blank" rel="noopener"
+            ><img src="logo_13.png"
+          /></a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
