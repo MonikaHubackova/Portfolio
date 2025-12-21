@@ -2,7 +2,7 @@ body {
   /* HOTOVO */
   color: #f4fff8;
   background-color: #f4fff8;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -221,12 +221,12 @@ html {
 }
 
 .title-dark-bg {
-  --bg-color: rgba(244, 255, 248, 0.05);
+  --bg-color: rgba(244, 255, 248, 0.1);
   --fg-color: rgba(244, 255, 248);
 }
 
 .title-white-bg {
-  --bg-color: rgba(25, 62, 65, 0.05);
+  --bg-color: rgba(25, 62, 65, 0.1);
   --fg-color: #193e41;
 }
 
@@ -242,7 +242,7 @@ html {
   transform: translateX(-50%);
   width: 100%;
   max-width: 1000px;
-  opacity: 0.05;
+  opacity: 0.1;
   z-index: 1;
 }
 
@@ -439,6 +439,7 @@ html {
 .about-stats {
   background: #ff6f7d; /* růžový pruh */
   padding: 60px 0;
+  z-index: 1000;
 }
 
 .about-stats__inner {
