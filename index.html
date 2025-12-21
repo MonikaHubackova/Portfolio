@@ -30,20 +30,20 @@
     </header>
 
     <div class="hero" id="hero">
-      <video autoplay muted loop id="gradient">
+      <video autoplay muted loop playsinline preload id="gradient">
         <source src="gradient.mp4" type="video/mp4" />
       </video>
 
       <img src="favicon-white.svg" alt="logo" class="hero-logo" />
 
       <div class="hero__content">
-        <div class="hero-title title-dark-bg">
+        <div class="title title-dark-bg">
           <span class="title__bg">Jsem grafik.</span>
           <h1 class="title__fg">Jsem Monika.</h1>
         </div>
 
         <div class="button_area">
-          <a href="#kontakt" class="btn">Chci grafiku</a>
+          <a href="#kontakt" class="button">Chci grafiku</a>
         </div>
 
         <div class="hero_bottom">
@@ -59,7 +59,7 @@
 
     <section class="portfolio" id="portfolio">
       <div class="container">
-        <div class="hero-title title-white-bg">
+        <div class="title title-white-bg">
           <span class="title__bg">Moje práce</span>
           <h2 class="title__fg">Portfolio</h2>
         </div>
@@ -138,7 +138,7 @@
           </a>
         </div>
         <div class="button_area">
-          <button type="submit" class="btn btn--primary">Zobrazit více</button>
+          <button class="button">Podívej se na další</button>
         </div>
       </div>
     </section>
@@ -173,7 +173,7 @@
 
     <section class="about" id="omne">
       <div class="container">
-        <div class="hero-title title-gray-bg hero-title--left">
+        <div class="title title-gray-bg">
           <span class="title__bg">Těší mě!</span>
           <h2 class="title__fg">O mně</h2>
         </div>
@@ -184,10 +184,12 @@
                 <img src="flower-small.svg" alt="Začátky" />
               </div>
               <p>
-                Jmenuji se Monika a ke grafice jsem se dostala už ve dvanácti
-                letech – tehdy hlavně díky blogům, které jsem si sama tvořila a
-                graficky ladila. Postupně se z koníčku stala vášeň a dnes i
-                práce, které se věnuji naplno.
+                <strong
+                  >Jmenuji se Monika a&nbsp;s&nbsp;grafikou jsem začala už ve
+                  dvanácti letech</strong
+                >, kdy jsem poprvé objevila Photoshop na rodinném počítači.
+                Postupně jsem se z&nbsp;koníčku stala vášeň a&nbsp;dnes
+                i&nbsp;práce, které se věnuji naplno.
               </p>
             </div>
 
@@ -196,10 +198,15 @@
                 <img src="flower-medium.svg" alt="Cesta" />
               </div>
               <p>
-                Studovala jsem gymnázium a chvíli i vysokou školu, ale brzy mi
-                došlo, že moje cesta povede spíš přes praxi než přes teorii. U
-                grafiky jsem zůstala a od té doby mám za sebou zhruba osm let
-                zkušeností a spoustu různorodých projektů.
+                Studovala jsem gymnázium a&nbsp;pak chvíli i&nbsp;programování
+                na vysoké škole, ale brzy mi došlo, že to není úplně správná
+                cesta. Z výšky jsem odešla, abych se plně mohla věnovat grafice,
+                a&nbsp;<strong
+                  >v&nbsp;tomto oboru jsem už zůstala. Od té doby mám za sebou
+                  zhruba osm let zkušeností</strong
+                >
+                a&nbsp;spoustu různorodých prací pro jednotlivce, firmy
+                i&nbsp;začínající projekty.
               </p>
             </div>
 
@@ -208,13 +215,19 @@
                 <img src="flower-big.svg" alt="Současnost" />
               </div>
               <p>
-                Nejčastěji se věnuji tiskovinám – letákům, brožurám nebo dalším
-                materiálům pro značky a firmy. Občas ale také ilustruji, fotím
-                nebo pracuji na digitální grafice. Každý projekt beru
-                individuálně a snažím se, aby výsledný design nebyl jen hezký na
-                pohled, ale hlavně dával smysl. Grafiku beru jako způsob
-                komunikace – a baví mě hledat řešení, která značce pomohou být
-                vidět a zapamatovatelná.
+                V současné době
+                <strong
+                  >mě nejvíc baví tvorba tiskovin (sazba letáků, brožur
+                  i&nbsp;knih). Taky se starám o&nbsp;sociální sítě různých
+                  firem, kde vytvářím příspěvky.</strong
+                >
+                Občas ale také ilustruji, fotím nebo dělám weby. Každý projekt
+                beru individuálně a&nbsp;snažím se, aby výsledný design nebyl
+                jen hezký na pohled, ale hlavně dával smysl. Grafiku beru jako
+                způsob komunikace –&nbsp;a&nbsp;<strong
+                  >ráda hledám nová řešení, která značce pomohou být vidět
+                  a&nbsp;být zapamatovatelná</strong
+                >.
               </p>
             </div>
           </div>
@@ -235,8 +248,8 @@
             <div class="stat__label">let praxe</div>
           </div>
           <div class="stat">
-            <div class="stat__num">50+</div>
-            <div class="stat__label">projektů</div>
+            <div class="stat__num">15+</div>
+            <div class="stat__label">stálých<br />zákazníků</div>
           </div>
           <div class="stat">
             <div class="stat__num">30+</div>
@@ -257,7 +270,7 @@
     <section class="contact" id="kontakt">
       <div class="container">
         <div class="contact__title">
-          <div class="hero-title title-dark-bg">
+          <div class="title title-dark-bg">
             <span class="title__bg">Napiš mi</span>
             <h2 class="title__fg">Kontakt</h2>
           </div>
@@ -282,7 +295,7 @@
 
           <textarea placeholder="Vaše zpráva" required></textarea>
 
-          <button type="submit" class="btn btn--primary">Odeslat</button>
+          <button type="submit" class="button">Odešli zprávu</button>
         </form>
       </div>
     </section>
